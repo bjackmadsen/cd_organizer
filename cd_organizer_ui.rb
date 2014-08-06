@@ -14,7 +14,7 @@ def main_menu
     elsif main_choice == 'l'
       list_artists
     elsif main_choice == 'x'
-      puts "Kthanxbye"
+      puts "KTHANXBYE\n\n"
       exit
     else
       puts "Not a valid entry"
@@ -23,14 +23,14 @@ def main_menu
 end
 
 def add_artist
-  puts "Enter the name of an artist"
+  puts "Enter the name of an artist:"
   input_name = gets.chomp
   Artist.new(input_name).save
   Artist.all.each do |artist|
     @current_artist = artist
   end
   puts "Artist added!\n\n"
-  puts "Now add an album for your artist"
+  puts "Now add an album for your artist:"
   input_album = gets.chomp
   @current_artist.add_album(input_album)
   puts "Album added!"
