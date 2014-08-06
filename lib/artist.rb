@@ -1,5 +1,5 @@
 class Artist
-
+    attr_reader:name, :album
     @@all_artists = []
   def initialize(name)
     @name = name
@@ -10,16 +10,12 @@ class Artist
     @@all_artists
   end
 
-  def name
-    @name
-  end
-
-  def album
-    @album
-  end
-
   def add_album(album)
     @album << album
+  end
+
+  def save
+    @@all_artists << self
   end
 end
 
