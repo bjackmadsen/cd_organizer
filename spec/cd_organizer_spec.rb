@@ -15,9 +15,9 @@ describe Artist do
 
   it "should add a album to an artist" do
     test_artist = Artist.new 'Beatles'
-    test_album = 'Rubber Soul'
+    test_album = Album.new 'Rubber Soul'
     test_artist.add_album(test_album)
-    expect(test_artist.album).to eq ['Rubber Soul']
+    expect(test_artist.album).to eq [test_album]
   end
 end
 

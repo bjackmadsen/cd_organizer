@@ -1,6 +1,7 @@
 class Artist
     attr_reader:name, :album
     @@all_artists = []
+
   def initialize(name)
     @name = name
     @album = []
