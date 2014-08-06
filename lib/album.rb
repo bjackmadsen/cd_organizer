@@ -1,4 +1,4 @@
-class Artists
+class Album
   def initialize(name)
     @name = name
   end
@@ -7,4 +7,3 @@ class Artists
     @name
   end
 end
-
